@@ -1,0 +1,187 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-image:url("../../star.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Este selector le quita a los hipervínculos la propiedad de subrayado*/
+a{
+  text-decoration: none;
+}
+
+/* Campos de texto, esta clase se usa para todos los formularios del sistema*/
+.input{
+  outline: none;
+  padding: 20px;
+  display: block;
+  width: 300px;
+  border-radius: 3px;
+  border-bottom: 2px solid #0B99D3;
+  border-top: none;
+  border-left: none;
+  border-right: none; 
+  margin: 20px auto;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+
+
+/*Esta clase se usa para todos los botones presentes en los formularios.*/
+.btn-Marcar{
+  padding: 10px;
+  color: #fff;
+  background: #0098cb;
+  width: 320px;
+  margin: 20px auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*Esta pseudoclase aplicará un cambio al color al botón
+de cualquier formulario cuando el usuario ponga el cursor del mouse sobre él*/
+.btn-Marcar:hover {
+  background-color: #00b8eb;
+}
+
+/*Esta clase se usa para los formularios de login, el modo usuario, generar reporte, cambiar contraseña y en la página de denegado. 
+Le pone un borde de color negro y un fondo transparente.*/
+.contenedor{
+  margin-top: 100px;
+  padding-top: 150px;
+  background-color: rgba(255, 255, 255, .3);
+  display: inline-block;
+  height: 300px;
+  width: 600px;
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+/*Los label están presentes en el formulario de editar datos. En este selector se específica el tipo de letra y el grueso
+del texto que contienen estos label*/
+label{
+  font-family: sans-serif;
+  font-weight: 850;
+
+}
+
+/*Este selector hace referencia al h1 que se encuentra en el fomulario de editar datos el cual también sirve
+como hipervínculo. En este selector se le indica que el texto va a ser de color blanco*/
+h1 a{
+  color: #FFF;
+}
+
+/*Tanto la clase avisoError como la clase avisoExito comparten casi las mismas propiedades, exceptuando
+su color de fondo*/
+.AvisoError, .AvisoExito{
+  margin:auto;
+  margin-top: 20px;
+  height: 50px;
+  width: 600px;
+  color: #FFF;
+  border-radius: 20px;
+  padding-top: 20px; 
+
+}
+/*En esta clase se define el color de fondo de avisoError*/
+.AvisoError{
+  background-color: #ED1313;
+}
+/*En esta clase se define el color de fondo de avisoExito*/
+.AvisoExito{
+  background-color: #13ED13;
+}
+/*Esta clase es la barra de navegación presente en el login del sistema*/
+.nav-login{
+  background-color: #0098cb;
+  color: #FFF;
+  height: 80px;
+  margin: -20px;
+  padding-top: 30px;
+  width: 1385px;
+}
+
+/*En esta clase se establece la separación entre los elementos que están en la barra de navegación
+de las vistas: cambiarContrasenia.php, inicio.php, registrar.php y reportes.php 
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.nav-principal{
+  display: flex;
+  justify-content: space-between;
+  background-color: #0098cb;
+}
+
+/*En esta clase se establece la alineación entre los elementos que están en la barra de navegación
+de las vistas: cambiarContrasenia.php, inicio.php, registrar.php y reportes.php 
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.nav-container__ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/*En esta clase se establece las propiedades de los elementos que están en la barra de navegación
+de las vistas: cambiarContrasenia.php, inicio.php, registrar.php y reportes.php 
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.nav-container__ul a, .nav-nombreDept{
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 640;
+}
+
+/*En esta clase se establece los margenes de los elementos que están en la barra de navegación
+de las vistas: cambiarContrasenia.php, inicio.php, registrar.php y reportes.php 
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.nav-container__ul li, .nav-nombreDept{
+  margin: 10px;
+  margin-top: 20px;
+}
+
+/*En esta clase se establece los margenes del input tipo select presente en la vista registrar.php y editar.php
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.input-select{
+  margin:10px;
+}
+
+/*En esta clase se establece la altura y ancho del input tipo select presente en las vistas registrar.php y editar.php
+(estas vistas se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+.input-select select{
+  width: 250px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+/*En esta clase se establece las propiedades de la tabla presente en la vista inicio.php
+(esta vista se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin:auto;
+}
+
+/*En esta clase se establece las propiedades de las filas y encabezados de la tabla presente en la vista inicio.php
+(esta vista se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  background-color: #dddddd;
+  border: 2px solid black;
+  height: 40px;
+}
+
+/*En esta clase se establece el color de letra y fondo de los encabezados de la tabla presente en la vista inicio.php
+(esta vista se encuentran en C:\xampp\htdocs\Control de Asistencia\Views)*/
+th{
+
+  background-color: #0098cb;
+  color:#F9F9F9;
+
+}
